@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Paseo a Villeta, 14 al 16 nov</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap"><style id="css">
+:root{--bg:#EDF3EA;--card:#FFFFFF;--ink:#14291C;--mut:#586C5F;--line:#CEDBCA;--acc:#0B7F7A;--pan:#9A5B0C;--warn:#B3324A;--ok:#2B7A4B;--soft:#DCE8D8;--onacc:#FFFFFF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0F1A14;--card:#17261D;--ink:#E6F0E4;--mut:#9DB3A3;--line:#2C3F33;--acc:#4CC9C0;--pan:#E0A24A;--warn:#F08A9B;--ok:#6CCB8E;--soft:#1E3126;--onacc:#06201E}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0F1A14;--card:#17261D;--ink:#E6F0E4;--mut:#9DB3A3;--line:#2C3F33;--acc:#4CC9C0;--pan:#E0A24A;--warn:#F08A9B;--ok:#6CCB8E;--soft:#1E3126;--onacc:#06201E}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.45 "Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:0 0 84px}
+main{max-width:640px;margin:0 auto;padding:18px 16px 8px}
+h1{font-size:15px;font-weight:600;margin:0 0 14px;color:var(--mut);letter-spacing:.01em}
+h2{font-size:22px;line-height:1.15;font-weight:700;margin:28px 0 10px;letter-spacing:-.01em}
+h3{font-size:16px;font-weight:700;margin:0}
+p{margin:0 0 10px}
+.hero{font-size:clamp(30px,9.5vw,46px);line-height:1.04;font-weight:800;letter-spacing:-.03em;margin:6px 0 14px}
+.hero span{display:block}
+.hero .a{color:var(--acc)}.hero .p{color:var(--pan)}
+.mut{color:var(--mut)}.sm{font-size:13.5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 10px}
+.note{border-left:4px solid var(--pan);background:var(--soft);padding:10px 12px;border-radius:0 10px 10px 0;margin:0 0 10px;font-size:14.5px}
+.note.w{border-color:var(--warn)}
+.row{display:flex;align-items:center;gap:10px}
+.row>.g{flex:1;min-width:0}
+.sp{justify-content:space-between}
+.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+button,select,input,textarea{font:inherit;color:inherit}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 16px;border-radius:12px;border:1px solid var(--acc);background:var(--acc);color:var(--onacc);font-weight:700;cursor:pointer;width:100%}
+.btn.o{background:transparent;color:var(--acc)}
+.btn.q{border-color:var(--line);background:transparent;color:var(--mut);font-weight:500}
+.btns{display:grid;gap:8px;margin:12px 0}
+.lnk{background:none;border:0;padding:8px 4px;color:var(--acc);font-weight:600;font-size:14px;cursor:pointer}
+.lnk.d{color:var(--warn)}
+select,input[type=text]{min-height:40px;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:0 10px;max-width:100%}
+input[type=text]{width:100%}
+input.m{text-align:right;width:118px}
+input[type=checkbox]{width:24px;height:24px;accent-color:var(--acc);flex:none;margin:0}
+label.f{display:block;font-size:13px;color:var(--mut);margin:0 0 8px}
+label.f input,label.f select{display:block;width:100%;margin-top:3px;color:var(--ink);font-size:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.step{display:inline-flex;align-items:center;gap:2px}
+.step button{width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--bg);font-size:20px;line-height:1;cursor:pointer}
+.step b{min-width:26px;text-align:center}
+.fam{padding:10px 0;border-top:1px solid var(--line)}
+.fam:first-child{border-top:0;padding-top:0}
+.fam .cnt{display:flex;gap:14px;margin-top:6px;font-size:13.5px;color:var(--mut);flex-wrap:wrap}
+.fam .cnt span{display:inline-flex;align-items:center;gap:6px}
+.day{display:grid;grid-template-columns:76px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.day:first-child{border-top:0}
+.day b{color:var(--pan)}
+.day ul{margin:0;padding:0 0 0 18px}
+.todo{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--line)}
+.todo:first-child{border-top:0}
+.todo.x span{text-decoration:line-through;color:var(--mut)}
+.meal{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:26px 0 8px;border-bottom:2px solid var(--ink);padding-bottom:6px}
+.meal small{display:block;color:var(--pan);font-weight:600;font-size:13px}
+.it{padding:11px 0;border-bottom:1px solid var(--line)}
+.it-top{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.it-q{font-size:18px;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}
+.it-sub{display:flex;align-items:center;gap:8px;margin-top:6px;flex-wrap:wrap}
+.it-sub select{flex:1;min-width:120px;font-size:14.5px}
+.it-sub select.un{border-color:var(--warn);color:var(--warn)}
+.it-n small{display:block;color:var(--mut);font-size:13px;font-weight:400}
+.edit{background:var(--soft);border-radius:12px;padding:12px;margin-top:8px}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:2px 0 10px;margin:0 -16px;padding-left:16px;padding-right:16px}
+.chip{flex:none;min-height:40px;padding:0 14px;border-radius:20px;border:1px solid var(--line);background:var(--card);cursor:pointer;font-weight:600;font-size:14.5px}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.buy{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.buy .g,.pay .g{flex:1;min-width:0}.buy.x .g{color:var(--mut)}
+.buy .g b{display:block;font-weight:600}
+.led{display:grid;grid-template-columns:1fr auto;gap:2px 10px;font-size:14.5px}
+.led dt{color:var(--mut)}.led dd{margin:0;text-align:right;font-variant-numeric:tabular-nums}
+.bal{font-size:20px;font-weight:800}
+.pos{color:var(--ok)}.neg{color:var(--warn)}
+.pay{display:flex;gap:10px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.pay:first-child{border-top:0}
+.seg{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:8px 0}
+.seg button{min-height:42px;border:0;background:var(--card);cursor:pointer;font-weight:600}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+nav{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);z-index:5}
+nav div{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+nav a{display:flex;align-items:center;justify-content:center;min-height:56px;text-decoration:none;color:var(--mut);font-weight:600;font-size:14.5px;border-top:3px solid transparent;margin-top:-1px}
+nav a[aria-current=page]{color:var(--ink);border-top-color:var(--acc)}
+#toast{position:fixed;left:16px;right:16px;bottom:calc(76px + env(safe-area-inset-bottom,0px));max-width:608px;margin:0 auto;background:var(--ink);color:var(--bg);padding:12px 14px;border-radius:12px;font-weight:600;font-size:14.5px;z-index:9;opacity:0;pointer-events:none;transition:opacity .2s}
+#toast.on{opacity:1}
+#sheet{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:10;display:none;align-items:flex-end}
+#sheet.on{display:flex}
+#sheet>div{background:var(--card);width:100%;max-width:640px;margin:0 auto;border-radius:16px 16px 0 0;padding:16px 16px calc(16px + env(safe-area-inset-bottom,0px))}
+#sheet textarea{width:100%;height:42vh;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:10px;font-size:14px}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+</style></head><body><div id="app"></div><script type="application/json" id="seed">{"rev": 1, "kf": 0.5, "split": "familia", "fams": [{"id": "tomas", "name": "Familia Tomás", "who": "Carolina y Felipe", "ad": 2, "ki": 1}, {"id": "alejo", "name": "Familia Alejo", "who": "Eka y Juan Sebastián", "ad": 2, "ki": 2}, {"id": "pau", "name": "Familia Pau", "who": "Jaione y Javier", "ad": 2, "ki": 2}, {"id": "mila", "name": "Familia Mila", "who": "Catalina y Michel", "ad": 2, "ki": 2}, {"id": "salva", "name": "Familia Salva", "who": "Adriana y Santiago", "ad": 2, "ki": 1}], "meals": [{"id": "asado", "d": "Sábado, almuerzo", "n": "Asado"}, {"id": "sopa", "d": "Sábado, cena", "n": "Sopa de tortilla"}, {"id": "desdom", "d": "Domingo, desayuno", "n": "Huevos, pancakes y fruta"}, {"id": "sancocho", "d": "Domingo, almuerzo", "n": "Sancocho de pollo"}, {"id": "tacos", "d": "Domingo, cena", "n": "Tacos"}, {"id": "deslun", "d": "Lunes, desayuno", "n": "Huevos, arepas y tostadas francesas"}, {"id": "bebidas", "d": "Todos los días", "n": "Bebidas"}, {"id": "picar", "d": "Todos los días", "n": "Para picar y torta"}, {"id": "otros", "d": "Varios", "n": "Aseo y otros"}], "items": [{"id": "i1", "meal": "asado", "name": "Lomo de res", "unit": "g", "per": 150, "price": 60000, "resp": "tomas", "done": false, "real": 0, "step": 500, "note": "Llevarlo descongelado. Jaione no come res"}, {"id": "i2", "meal": "asado", "name": "Cerdo", "unit": "g", "per": 80, "price": 28000, "resp": "alejo", "done": false, "real": 0, "step": 500}, {"id": "i3", "meal": "asado", "name": "Pollo para asar", "unit": "g", "per": 100, "price": 20000, "resp": "alejo", "done": false, "real": 0, "step": 500}, {"id": "i4", "meal": "asado", "name": "Chorizos", "unit": "und", "per": 0.75, "price": 3500, "resp": "tomas", "done": false, "real": 0, "note": "Felipe se los pide a Víctor"}, {"id": "i5", "meal": "asado", "name": "Morcilla", "unit": "g", "per": 40, "price": 22000, "resp": "", "done": false, "real": 0, "step": 250, "k": 0.25}, {"id": "i6", "meal": "asado", "name": "Papa richi", "unit": "g", "per": 150, "price": 4500, "resp": "", "done": false, "real": 0, "step": 500}, {"id": "i7", "meal": "asado", "name": "Mazorca", "unit": "und", "per": 0.5, "price": 2500, "resp": "", "done": false, "real": 0}, {"id": "i8", "meal": "asado", "name": "Aguacate para guacamole", "unit": "und", "per": 0.3, "price": 4000, "resp": "", "done": false, "real": 0}, {"id": "i9", "meal": "asado", "name": "Queso para asar", "unit": "g", "per": 40, "price": 32000, "resp": "", "done": false, "real": 0, "step": 250}, {"id": "i10", "meal": "asado", "name": "Piña para asar", "unit": "und", "per": 2, "price": 6000, "resp": "", "done": false, "real": 0, "fix": true}, {"id": "i11", "meal": "asado", "name": "Sandía", "unit": "und", "per": 1, "price": 15000, "resp": "", "done": false, "real": 0, "fix": true}, {"id": "i12", "meal": "asado", "name": "Carbón", "unit": "bolsas", "per": 2, "price": 12000, "resp": "", "done": false, "real": 0, "fix": true}, {"id": "i13", "meal": "asado", "name": "Sal, aceite y vinagre", "unit": "kit", "per": 1, "price": 25000, "resp": "", "done": false, "real": 0, "fix": true, "note": "Revisar antes qué hay en cada casa para no llevar repetido"}, {"id": "i14", "meal": "sopa", "name": "Pechuga de pollo", "unit": "g", "per": 60, "price": 24000, "resp": "", "done": false, "real": 0, "step": 500}, {"id": "i15", "meal": "sopa", "name": "Tomate", "unit": "g", "per": 100, "price": 5000, "resp": "", "done": false, "real": 0, "step": 500}, {"id": "i16", "meal": "sopa", "name": "Tortillas de maíz", "unit": "und", "per": 2, "price": 500, "resp": "", "done": false, "real": 0, "k": 0.5}, {"id": "i17", "meal": "sopa", "name": "Aguacate", "unit": "und", "per": 0.15, "price": 4000, "resp": "", "done": false, "real": 0}, {"id": "i18", "meal": "sopa", "name": "Crema de leche y queso", "unit": "kit", "per": 1, "price": 25000, "resp": "", "done": false, "real": 0, "fix": true}, {"id": "i19", "meal": "sopa", "name": "Cebolla, ajo, cilantro y chile", "unit": "kit", "per": 1, "price": 12000, "resp": "", "done": false, "real": 0, "fix": true}, {"id": "i20", "meal": "desdom", "name": "Huevos", "unit": "und", "per": 2, "price": 700, "resp": "tomas", "done": false, "real": 0, "k": 0.5}, {"id": "i21", "meal": "desdom", "name": "Pan tajado", "unit": "bolsas", "per": 3, "price": 7000, "resp": "", "done": false, "real": 0, "fix": true, "note": "Alcanza para las tostadas francesas del lunes"}, {"id": "i22", "meal": "desdom", "name": "Ingredientes para pancakes", "unit": "kit", "per": 1, "price": 30000, "resp": "alejo", "done": false, "real": 0, "fix": true, "note": "Eka hace la mezcla"}, {"id": "i23", "meal": "desdom", "name": "Salchichas", "unit": "und", "per": 1.5, "price": 1800, "resp": "", "done": false, "real": 0, "k": 1}, {"id": "i24", "meal": "desdom", "name": "Fruta picada: mango, melón, papaya", "unit": "g", "per": 150, "price": 6000, "resp": "", "done": false, "real": 0, "step": 500, "k": 1}, {"id": "i25", "meal": "sancocho", "name": "Pollo en presas", "unit": "g", "per": 180, "price": 15000, "resp": "", "done": false, "real": 0, "step": 500}, {"id": "i26", "meal": "sancocho", "name": "Papa, yuca y plátano", "unit": "g", "per": 200, "price": 4000, "resp": "", "done": false, "real": 0, "step": 500}, {"id": "i27", "meal": "sancocho", "name": "Mazorca", "unit": "und", "per": 0.5, "price": 2500, "resp": "", "done": false, "real": 0}, {"id": "i28", "meal": "sancocho", "name": "Arroz", "unit": "g", "per": 60, "price": 5000, "resp": "", "done": false, "real": 0, "step": 500}, {"id": "i29", "meal": "sancocho", "name": "Aguacate", "unit": "und", "per": 0.25, "price": 4000, "resp": "", "done": false, "real": 0}, {"id": "i30", "meal": "sancocho", "name": "Cebolla larga y cilantro", "unit": "kit", "per": 1, "price": 8000, "resp": "", "done": false, "real": 0, "fix": true}, {"id": "i31", "meal": "tacos", "name": "Carne o pollo para tacos", "unit": "g", "per": 100, "price": 30000, "resp": "", "done": false, "real": 0, "step": 500}, {"id": "i32", "meal": "tacos", "name": "Tortillas", "unit": "und", "per": 3, "price": 500, "resp": "", "done": false, "real": 0, "k": 0.66}, {"id": "i33", "meal": "tacos", "name": "Queso rallado", "unit": "g", "per": 30, "price": 35000, "resp": "", "done": false, "real": 0, "step": 250}, {"id": "i34", "meal": "tacos", "name": "Lechuga, tomate, cebolla y limón", "unit": "kit", "per": 1, "price": 15000, "resp": "", "done": false, "real": 0, "fix": true}, {"id": "i35", "meal": "tacos", "name": "Frijol refrito", "unit": "und", "per": 2, "price": 6000, "resp": "", "done": false, "real": 0, "fix": true}, {"id": "i36", "meal": "deslun", "name": "Huevos", "unit": "und", "per": 2, "price": 700, "resp": "tomas", "done": false, "real": 0, "k": 0.5, "note": "Incluye los de las tostadas francesas"}, {"id": "i37", "meal": "deslun", "name": "Arepas", "unit": "und", "per": 1.5, "price": 900, "resp": "", "done": false, "real": 0, "k": 0.66}, {"id": "i38", "meal": "deslun", "name": "Queso campesino", "unit": "g", "per": 50, "price": 24000, "resp": "", "done": false, "real": 0, "step": 250}, {"id": "i39", "meal": "deslun", "name": "Fruta picada: mango, melón, papaya", "unit": "g", "per": 150, "price": 6000, "resp": "", "done": false, "real": 0, "step": 500, "k": 1}, {"id": "i40", "meal": "bebidas", "name": "Agua en garrafa de 6 L", "unit": "und", "per": 4, "price": 8000, "resp": "", "done": false, "real": 0, "fix": true}, {"id": "i41", "meal": "bebidas", "name": "Jugo de naranja y mandarina", "unit": "ml", "per": 500, "price": 7000, "resp": "pau", "done": false, "real": 0, "step": 1000, "k": 1, "note": "Del D1, para los dos desayunos"}, {"id": "i42", "meal": "bebidas", "name": "Leche entera y deslactosada", "unit": "und", "per": 6, "price": 4500, "resp": "", "done": false, "real": 0, "fix": true, "note": "Litros: 3 y 3"}, {"id": "i43", "meal": "bebidas", "name": "Cerveza", "unit": "und", "per": 8, "price": 3500, "resp": "tomas", "done": false, "real": 0, "k": 0, "note": "O un barril de 30 L (unas 90 cervezas) si Felipe lo consigue"}, {"id": "i44", "meal": "bebidas", "name": "Vino en caja para tinto de verano", "unit": "cajas", "per": 4, "price": 16000, "resp": "pau", "done": false, "real": 0, "fix": true}, {"id": "i45", "meal": "bebidas", "name": "Gaseosa y bretaña", "unit": "und", "per": 8, "price": 4000, "resp": "pau", "done": false, "real": 0, "fix": true}, {"id": "i46", "meal": "bebidas", "name": "Limones", "unit": "g", "per": 1000, "price": 5000, "resp": "pau", "done": false, "real": 0, "fix": true}, {"id": "i47", "meal": "bebidas", "name": "Hielo", "unit": "bolsas", "per": 6, "price": 5000, "resp": "", "done": false, "real": 0, "fix": true}, {"id": "i48", "meal": "bebidas", "name": "Café", "unit": "und", "per": 1, "price": 20000, "resp": "", "done": false, "real": 0, "fix": true, "note": "Una libra"}, {"id": "i49", "meal": "picar", "name": "Frutos secos, papitas, aceitunas y pepinillos", "unit": "kit", "per": 1, "price": 80000, "resp": "pau", "done": false, "real": 0, "fix": true, "note": "Del D1"}, {"id": "i50", "meal": "picar", "name": "Fruta: uvas, arándanos, manzana, banano, mandarina", "unit": "g", "per": 300, "price": 8000, "resp": "", "done": false, "real": 0, "step": 500, "k": 1}, {"id": "i51", "meal": "picar", "name": "Jamón, queso y pan para sándwiches", "unit": "kit", "per": 1, "price": 45000, "resp": "", "done": false, "real": 0, "fix": true}, {"id": "i52", "meal": "picar", "name": "Torta de cumpleaños", "unit": "und", "per": 1, "price": 60000, "resp": "", "done": false, "real": 0, "fix": true, "note": "Cumplen Eka, Jaione, Adri y Caro"}, {"id": "i53", "meal": "otros", "name": "Papel higiénico, servilletas, bolsas y jabón", "unit": "kit", "per": 1, "price": 40000, "resp": "", "done": false, "real": 0, "fix": true}], "pays": [{"id": "p1", "concept": "Casa en Villeta, 2 noches", "amount": 3214202, "by": "tomas", "note": "Pagada por Carolina en Airbnb"}, {"id": "p2", "concept": "Persona de apoyo en cocina y aseo", "amount": 180000, "by": "", "note": "$90.000 por día, sábado y domingo. Por confirmar con el anfitrión"}], "trans": [{"id": "t1", "from": "pau", "to": "tomas", "amount": 642840, "note": "Dos cuotas de la casa, según el chat"}, {"id": "t2", "from": "alejo", "to": "tomas", "amount": 642840, "note": "Dos cuotas de la casa, según el chat"}], "plan": [{"d": "Viernes 13", "i": ["Mercado en la tarde para no perder piscina el sábado", "Revisar qué condimentos tiene cada familia"]}, {"d": "Sábado 14", "i": ["Salida a las 7:00, parada en Cafam o D1 de la vía (punto por definir)", "Ingreso a la casa a las 10:00", "Almuerzo: asado", "Cena: sopa de tortilla"]}, {"d": "Domingo 15", "i": ["Desayuno: huevos, pancakes y fruta", "Almuerzo: sancocho de pollo", "Cena: tacos"]}, {"d": "Lunes 16", "i": ["Desayuno: huevos, arepas y tostadas francesas", "Salida de la casa máximo a las 4:00 p. m.", "Almuerzo de regreso en Los Abuelos, cada familia paga lo suyo", "Ojo con el pico y placa del plan retorno entrando a Bogotá"]}], "todos": [{"id": "d0", "t": "Confirmar el número final de personas y si el bebé entra en el conteo", "done": false}, {"id": "d1", "t": "Confirmar cuántos niños van por familia (aquí están supuestos)", "done": false}, {"id": "d2", "t": "Repartir lo que sigue sin responsable", "done": false}, {"id": "d3", "t": "Felipe: confirmar si se consigue el barril de cerveza", "done": false}, {"id": "d4", "t": "Felipe: pedirle los chorizos a Víctor", "done": false}, {"id": "d5", "t": "Definir el punto de encuentro del sábado: Cafam o D1", "done": false}, {"id": "d6", "t": "Confirmar con el anfitrión la persona de apoyo y quién le paga", "done": false}, {"id": "d7", "t": "Colchoneta o colchón inflable para el cuarto de una sola cama", "done": false}, {"id": "d8", "t": "Confirmar que Mila y Salva ya le transfirieron a Carolina su parte de la casa", "done": false}, {"id": "d9", "t": "Quién lleva la torta", "done": false}]}</script><script>
+(function(){
+'use strict';
+var JS=document.currentScript.textContent,CSS=document.getElementById('css').textContent;
+var HEAD="<meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"><title>Paseo a Villeta, 14 al 16 nov</title><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap\">";
+var SEED=JSON.parse(document.getElementById('seed').textContent);
+var KEY='paseo-villeta-1',S,dirty=false,base=SEED.rev,art=null,ro=false,curFam=null,open={},resetArm=false;
+var TABS=[['plan','Plan'],['cantidades','Cantidades'],['compras','Compras'],['cuentas','Cuentas']];
+
+function load(){try{var l=JSON.parse(localStorage.getItem(KEY));if(l&&l.base===SEED.rev&&l.state){S=l.state;dirty=!!l.dirty;return}}catch(e){}S=JSON.parse(JSON.stringify(SEED));dirty=false}
+function save(){try{localStorage.setItem(KEY,JSON.stringify({base:base,dirty:dirty,state:S}))}catch(e){}}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function dots(n){return String(Math.abs(Math.round(n))).replace(/\B(?=(\d{3})+(?!\d))/g,'.')}
+function money(n){return(n<-0.5?'−':'')+'$'+dots(n)}
+function dec(n){return String(Math.round(n*10)/10).replace('.',',')}
+function sum(a,f){var t=0;for(var i=0;i<a.length;i++)t+=f(a[i]);return t}
+function fam(id){for(var i=0;i<S.fams.length;i++)if(S.fams[i].id===id)return S.fams[i];return null}
+function famName(id){var f=fam(id);return f?f.name:'Sin asignar'}
+function mealD(id){for(var i=0;i<S.meals.length;i++)if(S.meals[i].id===id)return S.meals[i].d.toLowerCase();return''}
+function uid(){return'x'+Date.now().toString(36)+Math.floor(Math.random()*1e4).toString(36)}
+function people(){return{a:sum(S.fams,function(f){return f.ad}),k:sum(S.fams,function(f){return f.ki})}}
+function eq(k){var p=people();return p.a+p.k*(k==null?S.kf:k)}
+function qty(it){if(it.fix)return it.per;var st=it.step||1;return Math.ceil(it.per*eq(it.k)/st-1e-9)*st}
+function est(it){var q=qty(it);return(it.unit==='g'||it.unit==='ml')?q/1000*it.price:q*it.price}
+function cost(it){return it.done&&it.real>0?it.real:est(it)}
+function fq(it){var q=qty(it);if(it.unit==='g')return q>=1000?dec(q/1000)+' kg':q+' g';if(it.unit==='ml')return q>=1000?dec(q/1000)+' L':q+' ml';return dec(q)+' '+it.unit}
+function unitP(it){return it.unit==='g'?'kg':it.unit==='ml'?'litro':it.unit==='und'?'unidad':it.unit}
+
+function cuentas(){
+  var F=S.fams,n=F.length||1,W=F.map(function(f){return f.ad+f.ki*S.kf}),Wt=sum(W,function(x){return x})||1,r={},totFam=0,totIt=0,unas=0,all=0;
+  F.forEach(function(f){r[f.id]={paid:0,pend:0,share:0,tin:0,tout:0,bal:0}});
+  S.pays.forEach(function(p){all+=p.amount;if(r[p.by]){r[p.by].paid+=p.amount;totFam+=p.amount}else unas+=p.amount});
+  S.items.forEach(function(it){var c=cost(it);all+=c;if(r[it.resp]){r[it.resp][it.done?'paid':'pend']+=c;totIt+=c}else unas+=c});
+  S.trans.forEach(function(t){if(r[t.from]&&r[t.to]){r[t.from].tout+=t.amount;r[t.to].tin+=t.amount}});
+  F.forEach(function(f,i){var x=r[f.id];x.share=totFam/n+(S.split==='persona'?totIt*W[i]/Wt:totIt/n);x.bal=x.paid+x.pend-x.share+x.tout-x.tin});
+  var deb=[],cre=[],moves=[];
+  F.forEach(function(f){var b=Math.round(r[f.id].bal);if(b<-500)deb.push({id:f.id,v:-b});else if(b>500)cre.push({id:f.id,v:b})});
+  deb.sort(function(a,b){return b.v-a.v});cre.sort(function(a,b){return b.v-a.v});
+  var i=0,j=0;while(i<deb.length&&j<cre.length){var m=Math.min(deb[i].v,cre[j].v);moves.push({from:deb[i].id,to:cre[j].id,v:m});deb[i].v-=m;cre[j].v-=m;if(deb[i].v<1)i++;if(cre[j].v<1)j++}
+  return{r:r,all:all,unas:unas,moves:moves,n:n}
+}
+
+function famOpts(sel,blank){var h=blank?'<option value="">'+blank+'</option>':'';S.fams.forEach(function(f){h+='<option value="'+f.id+'"'+(f.id===sel?' selected':'')+'>'+esc(f.name)+'</option>'});return h}
+
+function vPlan(){
+  var c=cuentas(),p=people(),done=S.items.filter(function(i){return i.done}).length,nun=S.items.filter(function(i){return!fam(i.resp)}).length;
+  var h='<p class="hero"><span>Somos '+(p.a+p.k)+'.</span><span class="a">Cuesta '+money(c.all)+'.</span><span class="p">'+money(c.all/c.n)+' por familia.</span></p>';
+  h+='<p class="mut">Casa en Villeta, sábado 14 a lunes 16 de noviembre. '+p.a+' adultos y '+p.k+' niños en '+S.fams.length+' familias. Compras hechas: '+done+' de '+S.items.length+'.</p>';
+  if(nun)h+='<div class="note w"><b>'+nun+' cosas sin responsable</b> ('+money(c.unas)+'). Mientras nadie las tome no entran en las cuentas. <a href="#cantidades">Asignarlas</a></div>';
+  h+='<div class="note">Los precios son estimados para presupuestar. Al comprar, cada familia anota el valor real en Compras y las cuentas se ajustan solas.</div>';
+  h+='<h2>Quiénes vamos</h2><div class="card">';
+  S.fams.forEach(function(f){h+='<div class="fam"><div class="row sp"><div class="g"><b>'+esc(f.name)+'</b><div class="sm mut">'+esc(f.who)+'</div></div></div><div class="cnt"><span>Adultos '+stepper('fams.'+f.id+'.ad',f.ad)+'</span><span>Niños '+stepper('fams.'+f.id+'.ki',f.ki)+'</span></div></div>'});
+  h+='</div><p class="sm mut">Al cambiar el número de personas se recalculan gramos y presupuesto. Un niño cuenta como '+dec(S.kf)+' adulto en comida.</p>';
+  h+='<h2>El fin de semana</h2><div class="card">';
+  S.plan.forEach(function(d){h+='<div class="day"><b>'+esc(d.d)+'</b><ul>'+d.i.map(function(x){return'<li>'+esc(x)+'</li>'}).join('')+'</ul></div>'});
+  h+='</div><h2>Pendientes por cerrar</h2><div class="card">';
+  S.todos.forEach(function(t){h+='<label class="todo'+(t.done?' x':'')+'"><input type="checkbox" data-set="todos.'+t.id+'.done" data-type="bool"'+(t.done?' checked':'')+'><span>'+esc(t.t)+'</span></label>'});
+  h+='</div>';
+  return h+foot();
+}
+function stepper(path,v){return'<span class="step"><button type="button" data-step="'+path+'" data-d="-1" aria-label="Menos">−</button><b class="num">'+v+'</b><button type="button" data-step="'+path+'" data-d="1" aria-label="Más">+</button></span>'}
+
+function vCant(){
+  var p=people(),h='<h2 style="margin-top:0">Cuánto llevar</h2><p class="mut">Calculado para '+p.a+' adultos y '+p.k+' niños, para que no sobre ni falte. Toca Ajustar para cambiar porción o precio.</p>';
+  S.meals.forEach(function(m){
+    var its=S.items.filter(function(i){return i.meal===m.id});if(!its.length)return;
+    h+='<div class="meal"><h3><small>'+esc(m.d)+'</small>'+esc(m.n)+'</h3><b class="num">'+money(sum(its,cost))+'</b></div>';
+    its.forEach(function(it){
+      h+='<div class="it"><div class="it-top"><span class="it-n">'+esc(it.name)+(it.note?'<small>'+esc(it.note)+'</small>':'')+'</span><span class="it-q">'+fq(it)+'</span></div>';
+      h+='<div class="it-sub"><select aria-label="Responsable" class="'+(fam(it.resp)?'':'un')+'" data-set="items.'+it.id+'.resp" data-type="str">'+famOpts(it.resp,'Sin asignar')+'</select><span class="num mut">'+money(cost(it))+'</span><button type="button" class="lnk" data-tog="'+it.id+'">'+(open[it.id]?'Cerrar':'Ajustar')+'</button></div>';
+      if(open[it.id]){
+        h+='<div class="edit"><div class="grid2"><label class="f">'+(it.fix?'Cantidad total ('+esc(it.unit)+')':'Por adulto ('+esc(it.unit)+')')+'<input type="text" inputmode="decimal" value="'+dec(it.per)+'" data-set="items.'+it.id+'.per" data-type="num"></label>';
+        h+='<label class="f">Precio por '+esc(unitP(it))+'<input type="text" inputmode="numeric" value="'+dots(it.price)+'" data-set="items.'+it.id+'.price" data-type="money"></label></div>';
+        if(!it.fix)h+='<label class="f">Cuánto come un niño frente a un adulto (vacío = '+dec(S.kf)+')<input type="text" inputmode="decimal" value="'+(it.k==null?'':dec(it.k))+'" data-set="items.'+it.id+'.k" data-type="numnull"></label>';
+        h+='<button type="button" class="lnk d" data-del="items.'+it.id+'">Quitar de la lista</button></div>';
+      }
+      h+='</div>';
+    });
+  });
+  h+='<h2>Agregar algo más</h2><div class="card"><label class="f">Qué es<input type="text" id="nn" placeholder="Ej. repelente, hielo extra"></label><div class="grid2"><label class="f">Costo estimado<input type="text" inputmode="numeric" id="nc" placeholder="0"></label><label class="f">Quién lo lleva<select id="nr">'+famOpts('', 'Sin asignar')+'</select></label></div><button type="button" class="btn o" data-add="items">Agregar</button></div>';
+  return h+foot();
+}
+
+function vComp(){
+  if(curFam===null)curFam=S.fams[0]?S.fams[0].id:'';
+  var h='<h2 style="margin-top:0">Lista de compras</h2><div class="chips">';
+  S.fams.forEach(function(f){h+='<button type="button" class="chip" data-fam="'+f.id+'" aria-pressed="'+(curFam===f.id)+'">'+esc(f.name.replace('Familia ',''))+'</button>'});
+  h+='<button type="button" class="chip" data-fam="" aria-pressed="'+(curFam==='')+'">Sin asignar</button></div>';
+  var its=S.items.filter(function(i){return curFam?i.resp===curFam:!fam(i.resp)});
+  if(!its.length)h+='<div class="card mut">'+(curFam?'Esta familia todavía no tiene nada asignado. Se asigna en Cantidades.':'Todo tiene responsable.')+'</div>';
+  else{
+    var f=fam(curFam);
+    h+='<p class="mut">'+(f?esc(f.who)+'. ':'')+its.length+' cosas, '+money(sum(its,cost))+' en total. Marca lo comprado y anota lo que costó de verdad.</p>';
+    its.forEach(function(it){
+      h+='<div class="buy'+(it.done?' x':'')+'"><input type="checkbox" aria-label="Comprado" data-set="items.'+it.id+'.done" data-type="bool"'+(it.done?' checked':'')+'><div class="g"><b>'+esc(it.name)+'</b><span class="sm mut">'+fq(it)+', '+esc(mealD(it.meal))+(it.note?'. '+esc(it.note):'')+'</span></div><input class="m num" type="text" inputmode="numeric" aria-label="Costo real" placeholder="'+dots(est(it))+'" value="'+(it.real>0?dots(it.real):'')+'" data-set="items.'+it.id+'.real" data-type="money"></div>';
+    });
+    h+='<div class="btns"><button type="button" class="btn" data-copy="lista">Copiar lista para WhatsApp</button></div>';
+  }
+  return h+foot();
+}
+
+function vCuen(){
+  var c=cuentas(),h='<h2 style="margin-top:0">Cuentas por familia</h2>';
+  if(c.unas>0)h+='<div class="note w">Hay '+money(c.unas)+' sin responsable que aún no entran en estas cuentas.</div>';
+  h+='<p class="sm mut">Casa y gastos fijos se reparten por familia. La comida se reparte:</p><div class="seg"><button type="button" data-split="familia" aria-pressed="'+(S.split!=='persona')+'">Igual por familia</button><button type="button" data-split="persona" aria-pressed="'+(S.split==='persona')+'">Según personas</button></div>';
+  S.fams.forEach(function(f){var x=c.r[f.id],b=Math.round(x.bal);
+    h+='<div class="card"><div class="row sp"><div class="g"><h3>'+esc(f.name)+'</h3><div class="sm mut">'+esc(f.who)+'</div></div><div class="bal num '+(b>500?'pos':b<-500?'neg':'')+'">'+(b>500?'+':'')+money(b)+'</div></div>';
+    h+='<p class="sm '+(b>500?'pos':b<-500?'neg':'mut')+'" style="margin:2px 0 8px;text-align:right">'+(b>500?'Le deben':b<-500?'Debe':'Al día')+'</p>';
+    h+='<dl class="led"><dt>Ya pagó</dt><dd>'+money(x.paid)+'</dd><dt>Le falta comprar (estimado)</dt><dd>'+money(x.pend)+'</dd><dt>Transfirió a otros</dt><dd>'+money(x.tout)+'</dd><dt>Recibió de otros</dt><dd>'+money(x.tin)+'</dd><dt>Le corresponde</dt><dd><b>'+money(x.share)+'</b></dd></dl></div>'});
+  h+='<h2>Para quedar a paz y salvo</h2><div class="card">';
+  if(!c.moves.length)h+='<span class="mut">Nadie le debe a nadie.</span>';
+  c.moves.forEach(function(m){h+='<div class="pay"><div class="g"><b>'+esc(famName(m.from))+'</b> le pasa a <b>'+esc(famName(m.to))+'</b></div><b class="num">'+money(m.v)+'</b></div>'});
+  h+='</div><p class="sm mut">Proyección con lo asignado. Queda definitiva cuando todo esté comprado con su valor real.</p>';
+  h+='<div class="btns"><button type="button" class="btn" data-copy="resumen">Copiar resumen para WhatsApp</button></div>';
+  h+='<h2>Gastos fijos</h2><div class="card">';
+  S.pays.forEach(function(p){h+='<div class="pay"><div class="g"><b>'+esc(p.concept)+'</b><div class="sm mut">'+(p.note?esc(p.note)+'. ':'')+'</div><select aria-label="Quién pagó" class="'+(fam(p.by)?'':'un')+'" style="margin-top:4px;font-size:14.5px" data-set="pays.'+p.id+'.by" data-type="str">'+famOpts(p.by,'Sin definir quién paga')+'</select></div><div style="text-align:right"><b class="num">'+money(p.amount)+'</b><br><button type="button" class="lnk d" data-del="pays.'+p.id+'">Quitar</button></div></div>'});
+  h+='</div><div class="card"><label class="f">Nuevo gasto fijo<input type="text" id="pc" placeholder="Ej. peajes, propina"></label><div class="grid2"><label class="f">Valor<input type="text" inputmode="numeric" id="pa" placeholder="0"></label><label class="f">Quién pagó<select id="pb">'+famOpts('','Sin definir')+'</select></label></div><button type="button" class="btn o" data-add="pays">Agregar gasto</button></div>';
+  h+='<h2>Transferencias entre familias</h2><div class="card">';
+  if(!S.trans.length)h+='<span class="mut">Ninguna registrada.</span>';
+  S.trans.forEach(function(t){h+='<div class="pay"><div class="g"><b>'+esc(famName(t.from))+'</b> a <b>'+esc(famName(t.to))+'</b>'+(t.note?'<div class="sm mut">'+esc(t.note)+'</div>':'')+'</div><div style="text-align:right"><b class="num">'+money(t.amount)+'</b><br><button type="button" class="lnk d" data-del="trans.'+t.id+'">Quitar</button></div></div>'});
+  h+='</div><div class="card"><div class="grid2"><label class="f">Quién transfiere<select id="tf">'+famOpts(S.fams[1]?S.fams[1].id:'')+'</select></label><label class="f">A quién<select id="tt">'+famOpts(S.fams[0]?S.fams[0].id:'')+'</select></label></div><label class="f">Valor<input type="text" inputmode="numeric" id="ta" placeholder="0"></label><button type="button" class="btn o" data-add="trans">Registrar transferencia</button></div>';
+  return h+foot();
+}
+
+function foot(){
+  var h='<h2>Guardar y compartir</h2>';
+  if(art&&!ro){h+='<p class="sm mut">'+(dirty?'Tienes cambios que solo se ven en este teléfono.':'Lo que ves es la versión publicada.')+' Al publicar, todo el que abra el enlace ve tus números.</p><div class="btns"><button type="button" class="btn'+(dirty?'':' o')+'" data-pub="1">Publicar cambios para el grupo</button>'}
+  else h+='<p class="sm mut">Tus cambios se guardan solo en este teléfono. Para que el grupo los vea, copia el resumen o tu lista y mándalos por WhatsApp.</p><div class="btns">';
+  if(dirty)h+='<button type="button" class="btn q" data-reset="1">'+(resetArm?'¿Seguro? Toca otra vez para borrar tus cambios':'Descartar mis cambios')+'</button>';
+  return h+'</div>';
+}
+
+function txtLista(){
+  var its=S.items.filter(function(i){return curFam?i.resp===curFam:!fam(i.resp)}),t='*Compras '+famName(curFam)+' · Paseo Villeta 14 al 16 nov*\n';
+  S.meals.forEach(function(m){var a=its.filter(function(i){return i.meal===m.id});if(!a.length)return;t+='\n_'+m.d+': '+m.n+'_\n';a.forEach(function(it){t+=(it.done?'✅ ':'▫️ ')+it.name+': '+fq(it)+' (~'+money(cost(it))+')\n'})});
+  return t+'\nTotal estimado: '+money(sum(its,cost));
+}
+function txtResumen(){
+  var c=cuentas(),p=people(),t='*Paseo Villeta 14 al 16 nov*\n'+(p.a+p.k)+' personas ('+p.a+' adultos, '+p.k+' niños), '+S.fams.length+' familias\nPresupuesto total: '+money(c.all)+' (~'+money(c.all/c.n)+' por familia)\n';
+  if(c.unas>0)t+='Sin responsable todavía: '+money(c.unas)+'\n';
+  t+='\n*Cuentas*\n';
+  S.fams.forEach(function(f){var x=c.r[f.id],b=Math.round(x.bal);t+=f.name+': aporta '+money(x.paid+x.pend)+', le corresponde '+money(x.share)+' → '+(b>500?'le deben '+money(b):b<-500?'debe '+money(-b):'al día')+'\n'});
+  if(c.moves.length){t+='\n*Para cuadrar*\n';c.moves.forEach(function(m){t+=famName(m.from)+' → '+famName(m.to)+': '+money(m.v)+'\n'})}
+  t+='\n*Quién lleva qué*\n';
+  S.fams.forEach(function(f){var a=S.items.filter(function(i){return i.resp===f.id});t+=f.name+': '+(a.length?a.map(function(i){return i.name+' ('+fq(i)+')'}).join(', '):'nada asignado')+'\n'});
+  return t;
+}
+function copy(t){
+  function fb(){document.getElementById('st').value=t;document.getElementById('sheet').className='on';var a=document.getElementById('st');a.focus();a.select()}
+  try{navigator.clipboard.writeText(t).then(function(){toast('Copiado. Pégalo en el grupo de WhatsApp.')},fb)}catch(e){fb()}
+}
+var tt;function toast(m){var e=document.getElementById('toast');e.textContent=m;e.className='on';clearTimeout(tt);tt=setTimeout(function(){e.className=''},2600)}
+
+function route(){var h=(location.hash||'').replace('#','');for(var i=0;i<TABS.length;i++)if(TABS[i][0]===h)return h;return'plan'}
+function render(){
+  var r=route(),v=r==='cantidades'?vCant():r==='compras'?vComp():r==='cuentas'?vCuen():vPlan();
+  document.getElementById('view').innerHTML=v;
+  var n='';TABS.forEach(function(t){n+='<a href="#'+t[0]+'"'+(t[0]===r?' aria-current="page"':'')+'>'+t[1]+'</a>'});
+  document.getElementById('tabs').innerHTML=n;
+}
+function changed(){dirty=true;resetArm=false;save();render()}
+function coll(name){return S[name]}
+function find(path){var p=path.split('.'),a=coll(p[0])||[];for(var i=0;i<a.length;i++)if(a[i].id===p[1])return{o:a[i],k:p[2],a:a,i:i};return null}
+function pnum(v){var n=parseFloat(String(v).replace(/\./g,'').replace(',','.'));return isFinite(n)&&n>=0?n:null}
+function pmoney(v){var d=String(v).replace(/\D/g,'');return d?parseInt(d,10):0}
+function val(id){var e=document.getElementById(id);return e?e.value:''}
+
+function buildDoc(s){var j=JSON.stringify(s).replace(/</g,'\\u003c');return'<!doctype html>\n<html lang="es"><head>'+HEAD+'<style id="css">'+CSS+'</style></head><body><div id="app"></div><scr'+'ipt type="application/json" id="seed">'+j+'</scr'+'ipt><scr'+'ipt>'+JS+'</scr'+'ipt></body></html>'}
+function publish(){
+  if(!art)return;var old=base,od=dirty;S.rev=(S.rev||0)+1;base=S.rev;dirty=false;save();toast('Publicando…');
+  art.publish(buildDoc(S)).then(function(){toast('Publicado para el grupo.');render()},function(e){
+    var c=e&&e.code;if(c==='conflict')return;
+    S.rev=old;base=old;dirty=od;save();
+    if(c==='not_writer'||c==='not_granted'||c==='not_declared'||c==='consent_required'){ro=true;toast('Solo quien creó la página puede publicar.')}
+    else toast(c==='rate_limited'?'Muy seguido. Espera un momento y vuelve a publicar.':'No se pudo publicar. Intenta de nuevo.');
+    render()});
+}
+
+document.getElementById('app').innerHTML='<main><h1>Paseo a Villeta, 14 al 16 de noviembre</h1><div id="view"></div></main><nav><div id="tabs"></div></nav><div id="toast" role="status"></div><div id="sheet"><div><p><b>Mantén presionado para copiar</b></p><textarea id="st" readonly></textarea><div class="btns"><button type="button" class="btn o" id="sc">Cerrar</button></div></div></div>';
+load();render();
+window.addEventListener('hashchange',function(){resetArm=false;render();window.scrollTo(0,0)});
+document.getElementById('sc').addEventListener('click',function(){document.getElementById('sheet').className=''});
+var app=document.getElementById('app');
+app.addEventListener('change',function(ev){
+  var e=ev.target,path=e.getAttribute('data-set');if(!path)return;var f=find(path);if(!f)return;var t=e.getAttribute('data-type'),v;
+  if(t==='bool')v=e.checked;else if(t==='money')v=pmoney(e.value);else if(t==='num'){v=pnum(e.value);if(v===null){render();return}}else if(t==='numnull'){v=e.value.trim()===''?null:pnum(e.value)}else v=e.value;
+  f.o[f.k]=v;changed();
+});
+app.addEventListener('click',function(ev){
+  var e=ev.target.closest('button');if(!e)return;var a;
+  if((a=e.getAttribute('data-step'))){var f=find(a);if(f){f.o[f.k]=Math.max(0,(f.o[f.k]||0)+parseInt(e.getAttribute('data-d'),10));changed()}}
+  else if((a=e.getAttribute('data-tog'))){open[a]=!open[a];render()}
+  else if(e.hasAttribute('data-fam')){curFam=e.getAttribute('data-fam');render()}
+  else if((a=e.getAttribute('data-split'))){S.split=a;changed()}
+  else if((a=e.getAttribute('data-del'))){var d=find(a+'.x');if(d){d.a.splice(d.i,1);changed()}}
+  else if((a=e.getAttribute('data-copy'))){copy(a==='lista'?txtLista():txtResumen())}
+  else if(e.hasAttribute('data-pub'))publish();
+  else if(e.hasAttribute('data-reset')){if(!resetArm){resetArm=true;render()}else{try{localStorage.removeItem(KEY)}catch(x){}resetArm=false;load();render();toast('Volviste a la versión publicada.')}}
+  else if((a=e.getAttribute('data-add'))){
+    if(a==='items'){var n=val('nn').trim();if(!n){toast('Escribe qué es.');return}S.items.push({id:uid(),meal:'otros',name:n,unit:'und',per:1,fix:true,price:pmoney(val('nc')),resp:val('nr'),done:false,real:0});changed()}
+    else if(a==='pays'){var c=val('pc').trim(),m=pmoney(val('pa'));if(!c||!m){toast('Falta el concepto o el valor.');return}S.pays.push({id:uid(),concept:c,amount:m,by:val('pb'),note:''});changed()}
+    else if(a==='trans'){var fr=val('tf'),to=val('tt'),am=pmoney(val('ta'));if(!am||fr===to){toast('Revisa el valor y que sean familias distintas.');return}S.trans.push({id:uid(),from:fr,to:to,amount:am,note:''});changed()}
+  }
+});
+if(window.claude&&typeof window.claude.use==='function'){try{window.claude.use('artifact').then(function(x){if(x&&typeof x.publish==='function'){art=x;render()}},function(){})}catch(e){}}
+})();
+</script></body></html>
